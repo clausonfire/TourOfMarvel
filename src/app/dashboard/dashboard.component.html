@@ -1,0 +1,23 @@
+<!-- <div class="heroes-menu">
+  <a *ngFor="let hero of heroes"
+      routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+</div> -->
+
+<app-hero-search></app-hero-search>
+
+<h2>Top Heroes</h2>
+
+<!-- <div *ngFor="let hero of heroes">
+
+ <img class="f1" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+ <br>
+ {{hero.name}}
+
+</div> -->
+
+<a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+  {{hero.name}}
+  <img class="f1" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+</a>

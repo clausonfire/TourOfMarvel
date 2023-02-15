@@ -1,0 +1,11 @@
+<div *ngFor="let hero of heroes">
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <p>
+      Hero Name: {{hero.name}}
+    </p>
+    <img class="f1" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+</div>
