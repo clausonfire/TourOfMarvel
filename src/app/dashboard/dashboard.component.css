@@ -1,5 +1,5 @@
 /* DashboardComponent's private CSS styles */
-
+/* 
 h2 {
   text-align: center;
 }
@@ -9,7 +9,7 @@ h2 {
   margin: auto;
   max-width: 1000px;
 
-  /* flexbox */
+  flexbox
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -23,7 +23,7 @@ h2 {
 }
 
 a {
-  background-color: #3f525c;
+  background-color: #ff9393;
   border-radius: 2px;
   padding: 1rem;
   font-size: 1.2rem;
@@ -36,24 +36,23 @@ a {
   margin: .5rem auto;
   box-sizing: border-box;
 
-  /* flexbox */
+  flexbox
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-}
+} */
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   a {
     width: 18%;
     box-sizing: content-box;
   }
 }
 
+
+
 a:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.832);
 }
 
-.f1{
-  width: 150px;
-  height: 150px;
-}
+

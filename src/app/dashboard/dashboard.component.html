@@ -7,7 +7,7 @@
 
 <app-hero-search></app-hero-search>
 
-<h2>Top Heroes</h2>
+<h2 class="font-bold text-white text-center font">TOP HEROES</h2>
 
 <!-- <div *ngFor="let hero of heroes">
 
@@ -17,7 +17,28 @@
 
 </div> -->
 
-<a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
-  {{hero.name}}
-  <img class="f1" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
-</a>
+<div class=" flex flex-wrap justify-center" >
+
+  <a class="bg-red-900 bg-opacity-50 text-center inline-grid p-10 " *ngFor="let hero of heroes"
+    routerLink="/detail/{{hero.id}}">
+
+    <div class="bg-stone-300 text-zinc-600 text-sm font-semibold">
+      {{hero.name}}
+    </div>
+    <div>
+      <img class="w-80 h-80" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+
+    </div>
+  </a>
+
+</div>
+
+
+<!-- <div class="">
+  <a class="f2 bg-green-600" *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <div class="bg-red-600 text-sm">
+      {{hero.name}}
+    </div>
+    <img class="f1 bg-red-300 w-80 h-80" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+  </a>
+</div> -->

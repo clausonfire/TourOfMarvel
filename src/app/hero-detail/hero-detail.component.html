@@ -1,11 +1,30 @@
-<div *ngFor="let hero of heroes">
-  <h2>{{hero.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{hero.id}}</div>
-  <div>
-    <p>
-      Hero Name: {{hero.name}}
-    </p>
-    <img class="f1" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+<main class="bg-gradient-to-t from-white">
+
+  <div *ngFor="let hero of heroes" class="text-center justify-center">
+
+    <h2 class="font-bold text-zinc-300 mt-11 text-4xl bg-red-700 pt-4 pb-4 bg-opacity-80 ml-96 mr-96 rounded-full shadow-md">{{hero.name | uppercase}} Details</h2>
+    <div class="font-light text-zinc-300 text-xl mt-6"><span>id: </span>{{hero.id}}</div>
+
+    <div class="text-center justify-center font-light text-zinc-300 text-xl mb-4">
+      <p>Hero Name: {{hero.name}}</p>
+    </div>
+
+    <div class="flex items-center justify-center">
+      <img class="rounded-3xl" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}" alt="{{hero.name}}">
+    </div>
+
   </div>
-  <button type="button" (click)="goBack()">go back</button>
-</div>
+</main>
+
+<footer>
+  <div class="flex items-center justify-center bg-white">
+    <div class="bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center">
+      <div class="w-full text-center mx-auto">
+        <button type="button" (click)="goBack()"
+          class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline">
+          Atras
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,8 +1,10 @@
-<h2>My Heroes</h2>
+<body class="bg-gradient-to-t from-white">
+
+  <h2 class="ml-16 font-bold w-24">My Heroes</h2>
 
 
 
-<!-- <ul class="heroes">
+  <!-- <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
@@ -14,11 +16,23 @@
   </div>
 </ul> -->
 
-<div *ngFor="let hero of heroes">
-  {{hero.id}} | {{hero.name}}
+  <div *ngFor="let hero of heroes" class="ml-16 pt-3 font-bold text-gray-800 ">
+    {{hero.id}} | {{hero.name}}
 
+  </div>
+
+
+</body>
+
+<div class="flex items-center justify-center bg-white">
+    <div class="bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center">
+      <div class="w-full text-center mx-auto">
+        <button type="button" (click)="atras()" class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline">
+          Atras
+        </button>
+        <button type="button" (click)="siguiente()" class="border border-red-500 bg-red-500 text-white rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 focus:outline-none focus:shadow-outline">
+          Siguiente
+        </button>
+      </div>
+    </div>  
 </div>
-
-
-<button (click)="atras()">Atras</button>
-<button (click)="siguiente()">Siguiente</button>
